@@ -20,12 +20,16 @@ while True:
     sobrou = randint(1, 10)
 
     if sobrou == 10:
+        print("Carregando...")
+        sleep(3)
         print(f"Parabéns, sobrou algo pro betinha {name}, isso é um milagre, sinta-se honrado.")
         testar = input("Deseja testar outro nome de betinha? [S/N] ")
         if testar == "N":
             break
 
     else:
+        print("Carregando...")
+        sleep(3)
         print(f"Não sobrou nada pro maldito betinha {name}.")
         pygame.mixer.music.load("Brutal.mp3")
         pygame.mixer.music.play()
